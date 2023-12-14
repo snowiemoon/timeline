@@ -1,0 +1,39 @@
+.timeline .items{
+    border-top: 3px solid rgb(204, 187, 248);
+}
+.timeline .items .items-list{
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+    margin-right: 0;
+}
+.items .items-list::before{
+    position: absolute;
+    top: 0;
+    content: "";
+    height: 35px;
+    border-right: 3px dashed rgb(204, 187, 248);
+}
+.items .items-list .profile{
+    position: absolute;
+    top: -80px;
+    margin: 0 auto;
+    left: 0; right: 0;
+    width: 70px;
+}
+
+.image{
+    width: 70px;
+    border-radius: 50%;
+
+}
+
+@media screen and (max-width:768px){
+    .items .items-list .event-date{
+        top: 35px;
+    }
+    .timeline .items .items-list{
+        padding-top: 75px;
+    }
+}
